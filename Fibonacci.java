@@ -13,7 +13,7 @@ public class Fibonacci {
 		
 		System.out.print("Enter the first number of the series");
 		n1 = sc.nextInt();
-		System.out.print("Enter the first number of the series");
+		System.out.print("Enter the second number of the series");
 		n2 = sc.nextInt();
 		System.out.print(n1+" ");
 		System.out.print(n2+" ");
