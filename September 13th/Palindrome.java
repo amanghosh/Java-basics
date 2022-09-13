@@ -6,22 +6,26 @@ public class Palindrome
 {
     public static void main(String args[])
     {
-        String a, b = "";
+        String stringA, stringB = "";
+        
         Scanner s = new Scanner(System.in);
+        
         System.out.print("Enter the string you want to check:");
-        a = s.nextLine();
-        int n = a.length();
+        stringA = s.nextLine();
+        
+        int n = stringA.length();
+        
         for(int i = n - 1; i >= 0; i--)
         {
-            b = b + a.charAt(i);
+            stringB = stringB + stringA.charAt(i);
         }
-        if(a.equalsIgnoreCase(b))
+        if(stringA.equalsIgnoreCase(stringB))
         {
-            System.out.println("The string is palindrome.");
+            System.out.println("The string is a palindrome string.");
         }
         else
         {
-            System.out.println("The string is not palindrome.");
+            System.out.println("The string is not a palindrome string.");
         }
     }
 }
